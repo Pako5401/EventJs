@@ -1,0 +1,34 @@
+        <div id="att" class="row add">
+                
+               
+                
+                    
+                </div>
+            </div>
+        </section>
+		
+		<script>
+            if(true){
+				for(var it = 1;it<=6;it++){
+					var midiv = document.createElement("div");
+					midiv.setAttribute("id","addimg"+it)
+					midiv.setAttribute("class","col-sm-4 portfolio-item");
+					midiv.innerHTML = "<p>Este es el contenido de mi div</p>";
+					document.getElementById('att').appendChild(midiv);
+					if(it == 1){
+						document.getElementById('addimg'+it).innerHTML ='<img class="img-responsive" src="resources/img/portfolio/boda.png" alt="">';
+					} else if(it == 2){
+						document.getElementById('addimg'+it).innerHTML ='<img class="img-responsive" src="resources/img/portfolio/sacramento.png" alt="">';
+					} else if(it == 3){
+						document.getElementById('addimg'+it).innerHTML ='<img class="img-responsive" src="resources/img/portfolio/cumple.png" alt="">';
+					} else if(it == 4){
+						document.getElementById('addimg'+it).innerHTML ='<img class="img-responsive" src="resources/img/portfolio/gradua.png" alt="">';
+					} else if(it == 5){
+						document.getElementById('addimg'+it).innerHTML ='<img class="img-responsive" src="resources/img/portfolio/reunion.png" alt="">';
+					} else{
+						document.getElementById('addimg'+it).innerHTML ='<img class="img-responsive" src="resources/img/portfolio/otros.png" alt="">';
+					}
+					
+				}		
+            }
+        </script>
